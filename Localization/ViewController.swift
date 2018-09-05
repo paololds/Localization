@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         updateBeerWithValue(beerCounter: 0)
     }
     
@@ -25,8 +24,14 @@ class ViewController: UIViewController {
     }
     
     private func updateBeerWithValue(beerCounter:NSInteger){
-        let localizedBeers = NSLocalizedString("%d beer(s)", comment: "")
-        textLabel?.text = String.localizedStringWithFormat(localizedBeers, beerCounter)
+        let localizedBeers = NSLocalizedString("%d beer(s)",
+                                               comment: "number of beers")
+        textLabel?.text = localizedStringWithValue(string: localizedBeers,
+                                                   counter: beerCounter)
+    }
+    
+    func localizedStringWithValue(string:String, counter:Int) -> String{
+        return String.localizedStringWithFormat(string, counter)
     }
     
     override func didReceiveMemoryWarning() {

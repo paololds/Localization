@@ -13,7 +13,18 @@
 		526FEA1020B34655009E7C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526FEA0F20B34655009E7C66 /* Assets.xcassets */; };
 		526FEA1320B34655009E7C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526FEA1120B34655009E7C66 /* LaunchScreen.storyboard */; };
 		528371CC20B8103C00118577 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 528371CE20B8103C00118577 /* Localizable.stringsdict */; };
+		52F43D10213FCD630013C568 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F43D0F213FCD630013C568 /* LocalizationTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52F43D12213FCD630013C568 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 526FE9FD20B34654009E7C66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 526FEA0420B34654009E7C66;
+			remoteInfo = Localization;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		526FEA0520B34654009E7C66 /* Localization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Localization.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +38,20 @@
 		528371CB20B8102F00118577 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		528371CD20B8103C00118577 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		528371CF20B8103F00118577 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = it; path = it.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		52F43D0D213FCD630013C568 /* LocalizationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F43D0F213FCD630013C568 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		52F43D11213FCD630013C568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		526FEA0220B34654009E7C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52F43D0A213FCD630013C568 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				526FEA0720B34654009E7C66 /* Localization */,
+				52F43D0E213FCD630013C568 /* LocalizationTests */,
 				526FEA0620B34654009E7C66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				526FEA0520B34654009E7C66 /* Localization.app */,
+				52F43D0D213FCD630013C568 /* LocalizationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +91,15 @@
 				528371CE20B8103C00118577 /* Localizable.stringsdict */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		52F43D0E213FCD630013C568 /* LocalizationTests */ = {
+			isa = PBXGroup;
+			children = (
+				52F43D0F213FCD630013C568 /* LocalizationTests.swift */,
+				52F43D11213FCD630013C568 /* Info.plist */,
+			);
+			path = LocalizationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,18 +122,40 @@
 			productReference = 526FEA0520B34654009E7C66 /* Localization.app */;
 			productType = "com.apple.product-type.application";
 		};
+		52F43D0C213FCD630013C568 /* LocalizationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52F43D16213FCD630013C568 /* Build configuration list for PBXNativeTarget "LocalizationTests" */;
+			buildPhases = (
+				52F43D09213FCD630013C568 /* Sources */,
+				52F43D0A213FCD630013C568 /* Frameworks */,
+				52F43D0B213FCD630013C568 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52F43D13213FCD630013C568 /* PBXTargetDependency */,
+			);
+			name = LocalizationTests;
+			productName = LocalizationTests;
+			productReference = 52F43D0D213FCD630013C568 /* LocalizationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		526FE9FD20B34654009E7C66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Paolo Ladisa";
 				TargetAttributes = {
 					526FEA0420B34654009E7C66 = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					52F43D0C213FCD630013C568 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 526FEA0420B34654009E7C66;
 					};
 				};
 			};
@@ -120,6 +174,7 @@
 			projectRoot = "";
 			targets = (
 				526FEA0420B34654009E7C66 /* Localization */,
+				52F43D0C213FCD630013C568 /* LocalizationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52F43D0B213FCD630013C568 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,7 +210,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52F43D09213FCD630013C568 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52F43D10213FCD630013C568 /* LocalizationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52F43D13213FCD630013C568 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 526FEA0420B34654009E7C66 /* Localization */;
+			targetProxy = 52F43D12213FCD630013C568 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		526FEA0C20B34654009E7C66 /* Main.storyboard */ = {
@@ -331,6 +409,46 @@
 			};
 			name = Release;
 		};
+		52F43D14213FCD630013C568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paololadsa.LocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localization.app/Localization";
+			};
+			name = Debug;
+		};
+		52F43D15213FCD630013C568 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LocalizationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paololadsa.LocalizationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Localization.app/Localization";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +466,15 @@
 			buildConfigurations = (
 				526FEA1820B34655009E7C66 /* Debug */,
 				526FEA1920B34655009E7C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52F43D16213FCD630013C568 /* Build configuration list for PBXNativeTarget "LocalizationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52F43D14213FCD630013C568 /* Debug */,
+				52F43D15213FCD630013C568 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
